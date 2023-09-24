@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>CSS3 PROPERTIES</title>
+<style>
+.lgrad{
+width:100%;
+height:150px;
+background:Linear-gradient(to top right,red,blue,yellow);
+}
+.rgrad{
+width:100%;
+height:150px;
+background:radial-gradient(circle,red 20%,blue 30%,yellow 20%);
+}
+.box1,.box2,.box3{
+width:150px;
+height:150px;
+background-color:skyblue;
+transform:scale(0.4);
+}
+.box1:hover{
+transform:scaleY(0.4);
+}
+.box2:hover{
+transform:translateY(100px);
+}
+.box3:hover{
+transform:rotateX(360deg);
+transition-duration:1s;
+transition-delay:2s;
+}
+.box4{
+width:150px;
+height:150px;
+background:radial-gradient(circle,red 20%,blue 30%,yellow 20%);
+}
+.box4:hover{
+transform:rotate(360deg);
+transition-duration:2s;
+}
+</style>
+</head>
+<body>
+<!-- gradient
+1. Linear gradient
+2. Radial gradient
+-->
+<div class="lgrad"></div><br><br>
+<div class="rgrad"></div><br><br>
+<!-- Transform 
+1.Scale can have a value
+2.translate  it can have px value
+3.rotate
+-->
+<!-- transition properties
+transition-duration
+transition-delay
+-->
+<div class="box1"></div><br><br>
+<div class="box2"></div><br><br>
+<div class="box3"></div><br><br>
+<div class="box4"></div><br><br>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Animation properties and media query</title>
+<style> 
+body
+{
+background-color:lightpink;
+width:200px;
+height:200px;
+margin:50px auto;
+}
+
+@media only screen and (min-width:450px){
+body
+{
+background-color:blue;
+}
+img
+{
+width:200px;
+height:200px;
+border: 10px solid red;
+transform:scale(0.9);
+animation-name:img;
+animation-duration:3s;
+animation-delay:1s;
+animation-iteration-count:infinite;
+}
+.img:hover{
+transform:scale(0.9);
+transform:rotateX(360deg);
+transition-duration:1s;
+transition-delay:1s;
+}
+
+h1
+{
+color:red;
+}
+p
+{
+width:250px;
+height:250px;
+background-color:lightgreen;
+}
+/* img
+{
+width:200px;
+height:200px;
+animation-name:img;
+animation-duration:3s;
+animation-delay:1s;
+animation-iteration-count:infinite;
+} */
+.box{
+animation-name:abc;
+animation-duration:3s;
+animation-delay:1s;
+animation-iteration-count:infinite;
+}
+
+@keyframes abc{
+from{
+background-color:skyblue;
+width:100px;
+height:100px;
+}
+to{
+background-color:red;
+width:300px;
+height:300px;
+}
+}
+}
+
+</style>
+</head>
+<body>
+<h1>Image Animation using css</h1>
+<p>In the last module we had seen that with the combination of transform and transition 
+   properties we can have simple  animation to the HTML Element. 
+   CSS animation provides more control by defining keyframes.
+   By defining the keyframes rule we can have a better control over the intermediate state 
+   between initial state and final state  of the entire animation.</p><br><br>
+<img src="https://i.ytimg.com/vi/qphme6ULtq0/mqdefault.jpg" class="box"/>
+<div class="img"></div>
+</div>
+</body>
+</html>

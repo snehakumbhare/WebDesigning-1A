@@ -1,0 +1,22 @@
+<html>
+<head>
+<title >Age calculator</title>
+</head>
+<body style="background-color:powderblue;">
+<CENTER><h1 style="color:rgba(255, 0, 200, 0.872);">AGE CALCULATOR</h1>
+<div class="wrap">
+  Year of birth : <input type="text"  placeholder="Ex:2007" id="dob" >
+  <button onclick="cal()" id="btn">calculate</button>
+  <div id="result"></div>
+</div>
+  </CENTER>
+  <script>
+  function cal(){
+  var yob=document.getElementById("dob").value;
+  //alert(yob);
+  var res=2023-yob;
+  document.getElementById("result").innerHTML="You are "+ res +" years old";
+  }
+  </script>
+</body>
+</html>
